@@ -1,4 +1,4 @@
-import { use, useState } from "react";
+import { useState } from "react";
 import { Global } from "@emotion/react";
 import styled from "@emotion/styled";
 import { globalStyles } from "./styles/globalStyle";
