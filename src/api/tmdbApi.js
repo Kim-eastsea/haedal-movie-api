@@ -1,16 +1,4 @@
-import axios from "axios";
-import { API_KEY } from "../config.js";
-
-const BASE = "https://api.themoviedb.org/3";
-
-const api = axios.create({
-  baseURL: BASE,
-  params: {
-    api_key: API_KEY,
-    language: "ko-KR",
-  },
-  timeout: 10000,
-});
+import { api } from "./baseApi.js";
 
 export async function Top5Movies() {
   try {

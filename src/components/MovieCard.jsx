@@ -2,8 +2,8 @@ import styled from "@emotion/styled";
 
 export const MovieCard = ({ movie }) => {
   return (
-    <MovieCardWrap className="movieCard" id={movie.id}>
-      <Img src={movie.poster_path ? `https://image.tmdb.org/t/p/w500${movie.poster_path}` : ""} alt={movie.title} />
+    <MovieCardWrap id={movie.id}>
+      <Img src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`} alt={movie.title} />
       <Title>{movie.title}</Title>
       <Info>평점: {movie.vote_average}</Info>
       <Info>{movie.overview}</Info>
